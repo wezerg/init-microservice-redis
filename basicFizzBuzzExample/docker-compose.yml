@@ -1,0 +1,19 @@
+services:
+  producer:
+    build: ./producer
+    volumes:
+      - files:/files
+    depends_on: 
+      - redis
+  fizzbuzz:
+    build: ./fizzbuzz
+    volumes:
+      - files:/files
+    depends_on: 
+      - redis
+    deploy:
+      replicas: 2
+  redis:
+    image: redis
+volumes:
+  files: {}
