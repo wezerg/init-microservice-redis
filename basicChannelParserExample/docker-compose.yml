@@ -1,0 +1,19 @@
+services:
+  listener:
+    build: ./listener
+    depends_on: 
+      - redis
+  parsera:
+    build: ./parserA
+    depends_on: 
+      - redis
+  parserzk:
+    build: ./parserZK
+    depends_on: 
+      - redis
+  writer:
+    build: ./writer
+    depends_on: 
+      - redis
+  redis:
+    image: redis
