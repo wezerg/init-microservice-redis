@@ -1,0 +1,13 @@
+services:
+  client:
+    build: ./client
+    depends_on:
+      - redis
+  worker:
+    build: ./worker
+    depends_on:
+      - redis
+    deploy:
+      replicas: 2
+  redis:
+    image: redis
