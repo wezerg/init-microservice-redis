@@ -1,0 +1,15 @@
+services:
+  facture:
+    build: ./consumer
+    depends_on: 
+      - redis
+  usine:
+    build: ./usine
+    depends_on: 
+      - redis
+  producer:
+    build: ./producer
+    depends_on: 
+      - redis
+  redis:
+    image: redis
