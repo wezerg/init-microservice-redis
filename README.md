@@ -4,3 +4,4 @@ Chaque dossier représente un exemple d'architecture micro service
 - [Exemple de broadCast sur une chat room](https://github.com/wezerg/init-microservice-redis/tree/main/basicBroadcastExample "basicBroadCastExample")
 - [Exemple de file d'attente dans un cycle de production](https://github.com/wezerg/init-microservice-redis/tree/main/basicWorkQueueExample "basicWorkQueueExample")
 - [Exemple de parser de texte dans une chat room](https://github.com/wezerg/init-microservice-redis/tree/main/basicChannelParserExample "basicChannelParserExample")
+- [Exemple de Fizz buzz distribué sur plusieurs conteneurs](https://github.com/wezerg/init-microservice-redis/tree/main/basicFizzBuzzExample "basicFizzBuzzExample")
